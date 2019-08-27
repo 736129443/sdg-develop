@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+/* 禁用iPhone中Safari的字号自动调整 */
+
+/* html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* 解决IOS默认滑动很卡的情况 */
+    /* -webkit-overflow-scrolling: touch; */
+/* }  */
+
+/* 禁止缩放表单 */
+
+/* input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+    resize: none;
+    border: none;
+} */
+
+
+/* 取消链接高亮  */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* 设置HTML5元素为块 */
+
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+} */
+
+
+/* 图片自适应 */
+
+
+/* img {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+
+
+/* display: block; */
+
+
+/* -ms-interpolation-mode: bicubic; */
+
+
+/*为了照顾ie图片缩放失真*/
+
+
+/* }  */
+
+
+/* 初始化 */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+    /* color: #555; */
+    background-color: #F2F2F2;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-family: 'Microsoft YaHei';
+}
+
+img {
+    border: none;
+}
+
+input {
+    font-family: 'Microsoft YaHei';
+    border:none;
+    outline:none;
+}
+
+
+/*单行溢出*/
+
+.one-txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*多行溢出 手机端使用*/
+
+.txt-cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+}
+
+
+/* 移动端点击a链接出现蓝色背景问题解决 */
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+    background: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w33 {
+    width: 33.333333%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.db {
+    display: block !important;
+}
+
+.dn {
+    display: none;
+}
+ 
+
+p {
+    display: inline;
+}
+
+.main {
+    padding-left: 25px;
+}
+td {
+    text-align: center;
+    height: 60px;
+    /*color: #606266;*/
+    padding: 0 4px;
+}
+th {
+    height: 50px;
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 14px;
+    /*color: #606266;*/
+}
+.main {
+    font-size: 16px;
+    padding: 30px!important;
+    background-color:#ffffff;
+}
+/*.el-table td, .el-table th{*/
+    /*text-align: center!important;*/
+/*}*/
+.el-pagination {
+    padding: 10px 405px;
+}
+.main>.header {
+    color: #606266;
+}
+.el-form-item__content {
+    position: static!important;
+}
+.el-form-item__error{
+    position: static!important;
+}
+.el-pagination{
+    text-align: center;
+    margin-top: 20px;
+}
+.el-input-group__append{
+    text-align: center!important;
+}
+
+/*谷歌苹果浏览器滚动条美化*/
+::-webkit-scrollbar {
+    width: 24px;
+    height:24px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    border: 6px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2) inset;
+    width: 22px;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-clip: content-box;
+    box-shadow: 0 0 0 6px rgba(180,180,180,0.4) inset;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.el-icon-loading{
+    font-size: 18px;
+}
+.el-loading-spinner > p{
+    display: block;
+}
+/*.el-dialog{*/
+    /*min-width: 900px;*/
+
+/*}*/
+.el-dialog__title{
+    font-size: 22px!important;
+}
+.boxShadow .cell.el-tooltip{
+    white-space: normal!important;
+}
+
+
+#my_tabClass .el-tabs__nav-scroll {
+    border-bottom: 1px solid white;
+    background: #eaedf2;
+}
+#my_tabClass .el-tabs__header {
+    margin: 0;
+}
+#my_tabClass .el-tabs__nav {
+    height: 55px;
+
+
+}
+#my_tabClass .el-tabs__item {
+    height: 55px;
+    line-height: 55px;
+    background: white;
+    border-top: 4px solid transparent;
+    background-color: white;
+}
+#my_tabClass .is-active {
+    border-top-color: #337df6;
+}
+#my_tabClass .el-tabs__content{
+    padding: 25px;
+}
